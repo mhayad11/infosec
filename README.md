@@ -26,5 +26,5 @@ where u can type in a console
 </html>
 ```
 * and that is those two angles brackets
-
+---
 # NEW SECTION
