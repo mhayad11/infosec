@@ -12,8 +12,9 @@
 # Bolck Qoute
 >This is a blockquote following a header.</p>
 When something is important enough, you do it even if the odds are not in your favor
-
-
+---
+Use the `printf()` function.
+---
 # **BIGGEST**
 ## _LESS_
 ### less
