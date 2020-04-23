@@ -10,7 +10,11 @@
 
 [logo]: mango.png
 ![alt text](mango.png "Mango")
-
+<h2 id="header-2"><a href="#header-2"></a>Header 2</h2>
+<blockquote>
+<p>This is a blockquote following a header.</p>
+<p>When something is important enough, you do it even if the odds are not in your favor.</p>
+</blockquote>
 
 # BIGGEST
 ## LESS
