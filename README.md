@@ -3,7 +3,7 @@
 <div align="center">
 <a href="https://www.hackthebox.eu/home/users/profile/188571" title="mh3ayad"><img src="https://www.hackthebox.eu/badge/image/188571" alt="alt text" /></a></div>
 ---
-<code class="language-plaintext highlighter-rouge">keyword</code>
+`keyword`
 ---
 
 [logo]: mango.png
@@ -33,8 +33,9 @@ where u can type in a console
 
 # NEW SECTION
 ```c
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
+#include <stdio.h>
+int main(void){
+  printf("hello,World!!");
+
 ```
 ---
