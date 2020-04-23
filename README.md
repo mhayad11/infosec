@@ -32,5 +32,9 @@ where u can type in a console
 ---
 
 # NEW SECTION
-
+```c
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
 ---
