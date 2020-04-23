@@ -12,8 +12,13 @@
 # Bolck Qoute
 >This is a blockquote following a header.</p>
 When something is important enough, you do it even if the odds are not in your favor
+
 ---
-Use the `printf()` function.
+# code
+`#include <stdio.h>
+int main(void){
+  printf("hello,World!!");
+` 
 ---
 # **BIGGEST**
 ## _LESS_
