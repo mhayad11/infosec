@@ -7,7 +7,6 @@
 ### metigation
 
 ---
-## AD_overvire
 ## smbrelay attack
 ### idea
 ### tools
@@ -15,7 +14,6 @@
 ### metigation
 
 ---
-## AD_overvire
 ## smbrelay attack
 ### idea
 ### tools
@@ -23,7 +21,6 @@
 ### metigation
 
 ---
-## AD_overvire
 ## smbrelay attack
 ### idea
 ### tools
@@ -31,7 +28,6 @@
 ### metigation
 
 ---
-## AD_overvire
 ## smbrelay attack
 ### idea
 ### tools
@@ -39,7 +35,6 @@
 ### metigation
 
 ---
-## AD_overvire
 ## smbrelay attack
 ### idea
 ### tools
@@ -47,7 +42,6 @@
 ### metigation
 
 ---
-## AD_overvire
 ## smbrelay attack
 ### idea
 ### tools
@@ -55,7 +49,6 @@
 ### metigation
 
 ---
-## AD_overvire
 ## smbrelay attack
 ### idea
 ### tools
@@ -63,7 +56,6 @@
 ### metigation
 
 ---
-## AD_overvire
 ## smbrelay attack
 ### idea
 ### tools
