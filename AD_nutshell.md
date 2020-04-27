@@ -252,6 +252,7 @@ if we have a access to active directory domain controller with a creds of one of
 we can create a ticket/certificate  for ourselves for persistent login 
 > actually it remains 10 years
 once we are in we abuse krbtgt user which a user reponsible for ticket creation and creat oursleves one
+
 ### tools
 mimicatz
 >privilege::debug
@@ -267,6 +268,7 @@ mimicatz
 persistent login for 10 yesrs 
 ### metigation
 Enforce a least privilege model
+
 Install endpoint protection to block attackers from loading modules like mimikatz
 
 
