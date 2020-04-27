@@ -33,6 +33,14 @@ C:\windows\SYSVOL  → groups policy
 * user can't use the same pass before using 24 different pass
 * some users leave their passwords in the description
 
+* name resolution methods
+[logo]: img/name.png
+![alt text](img/name.png "name resolution")
+
+* remote managent methods
+[logo]: img/remote.png
+![alt text](img/remote.png "remote resolution")
+
 ## smbrelay attack
 ### idea
 ### tools
