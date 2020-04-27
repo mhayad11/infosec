@@ -10,10 +10,9 @@ Active Directory (AD) is a Microsoft product that consists of several services t
 ```console
 ayad.tshoot.com called FQDN fully qualified domain name
 
-hostname      vs      netbios name
+###hostname      vs    ###netbios name
 both of them is a way to identifi machines inside my network
-
-###have dots             ###dots not allowd
+have dots             dots not allowd
 modern                old
 tshoot.com            TSHOOT
 
