@@ -150,25 +150,57 @@ hashes dumped
 
 create a domian user
 [logo]: img/user.png
-![alt text](img/user.png "dns")
+![alt text](img/user.png "user")
 ### metigation
 disable ipv6
 
 disable ntlm and move to kerberos
 
 ---
-## smbrelay attack
+## pass the hash
 ### idea
+once you grabbed some hashes you can spread them acreoss network to see what computers you can login with these creds
 ### tools
+crackmapexec.py 10.0.0.0/8 -u user_name -H `NTLMv1_hash` --local 
+
+psexec user@computer_ip -H `NTLMv1_hash`
+
 ### reproduce
+one u get a pwned sign so that user have login access to that computer
+[logo]: img/hashed.png
+![alt text](img/hashed.png "hash")
+after that we can use tools like psexec to get an interactive shell
+### payoff
+after that we can use tools like psexec to get an interactive shell
+[logo]: img/ps.png
+![alt text](img/ps.png "psexec")
 ### metigation
+it's hard to completely prevent it but we can make it more difficult for an attacker
+
+Limit account reuse
+Utilizing strong passwords
+use PAM privilege access manager
 
 ---
-## smbrelay attack
+## Token Impersonation
 ### idea
+Token are temporary keys that allow you access system/network without supplying any  creds
+
+it's a cookies for windows
+
 ### tools
+metasploit framework with a meterpreter session
 ### reproduce
+once we get a meterpreter  session we can launch our attack
+[logo]: img/token.png
+![alt text](img/token.png "token")
+
+### payoff
+impersonate local admin users
 ### metigation
+limit user/group token creation permissions
+acount tiering
+local admin restriction
 
 ---
 ## smbrelay attack
