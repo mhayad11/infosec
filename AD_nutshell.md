@@ -96,7 +96,7 @@ we will abuse windows proxy auto discovery WPAD to relay creds and authunicate t
 our goal is to force  victim is to authunticate us 
 
 ```console
-### WAPD
+WAPD
 windows proxy auto detection feature it's legitimate use is to detect network proxy used fro connecting to the internet
 
 the address of the server providing the file wapd.dat would be resolved by dns and if no enrty was found it will resolved via LLMNR
