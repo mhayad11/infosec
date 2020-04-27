@@ -3,8 +3,8 @@
 
 >Active Directory (AD) is a Microsoft product that consists of several services that run on Windows Server to manage permissions and access to networked resources. Active Directory stores data as objects. An object is a single element, such as a user, group, application or device, such as a printer.
 
-[logo]: active.png
-![alt text](active.png "active direcorty")
+[logo]: img/active.png
+![alt text](img/active.png "active direcorty")
 
 * ayad.tshoot.com called FQDN fully qualified domain name
 
