@@ -8,18 +8,20 @@
 
 * ayad.tshoot.com called `FQDN` fully qualified domain name
 
+* hostname      vs      netbios name
 ```console
-
-hostname      vs      netbios name
 both of them is a way to identifi machines inside my network
 have dots             dots not allowd
 modern                old
 tshoot.com            TSHOOT
 
+```
+* important files
+```
 C:\windows\NTDS    → users and groups database 
-                             → ntds.dit is the file contains users and groups
+                   → ntds.dit is the file contains users and groups
 C:\windows\NTDS    → logs
-C:\windows\SYSVOL → groups policy
+C:\windows\SYSVOL  → groups policy
 ```
 ## smbrelay attack
 ### idea
