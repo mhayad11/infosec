@@ -153,6 +153,7 @@ create a domian user
 ![alt text](img/user.png "dns")
 ### metigation
 disable ipv6
+
 disable ntlm and move to kerberos
 
 ---
