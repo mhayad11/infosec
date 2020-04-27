@@ -95,6 +95,7 @@ attacker abuse IPV6 default configs and serve as IPV6 dns server
 we will abuse windows proxy auto discovery WPAD to relay creds and authunicate to other services in the network
 our goal is to force  victim is to authunticate us 
 
+```console
 ### WAPD
 windows proxy auto detection feature it's legitimate use is to detect network proxy used fro connecting to the internet
 
@@ -103,6 +104,7 @@ the address of the server providing the file wapd.dat would be resolved by dns a
 attacker can reply to these requests preteneded ha has the file and ask for auth to access the file which is automated by windows
 
 without any user interaction and that provide attacker the ntlm hash of the logged user
+```
 
 that was before 2016 patch that do the folowing:
 
@@ -165,6 +167,7 @@ psexec user@computer_ip -H `NTLMv1_hash`
 once u get a pwned sign so that user have login access to that computer
 [logo]: img/hashed.png
 ![alt text](img/hashed.png "hash")
+
 after that we can use tools like psexec to get an interactive shell
 ### payoff
 after that we can use tools like psexec to get an interactive shell
