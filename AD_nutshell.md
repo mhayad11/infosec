@@ -6,11 +6,11 @@
 [logo]: active.png
 ![alt text](active.png "active direcorty")
 
+* ayad.tshoot.com called FQDN fully qualified domain name
 
 ```console
-ayad.tshoot.com called FQDN fully qualified domain name
 
-### hostname      vs    ### netbios name
+hostname      vs      netbios name
 both of them is a way to identifi machines inside my network
 have dots             dots not allowd
 modern                old
