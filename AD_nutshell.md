@@ -208,8 +208,11 @@ local admin restriction
 kerberos is an authuntication protocl in windows and here is a paragraph of how it's work
 [logo]: img/kerberos.png
 ![alt text](img/kerberos.png "kerberos")
+
 what we need to understand is that kerberos is relying on tickets
+
 client send a request encrypted with his NTLM hash `TGT` to what is called  `KDC` consider it your DC 
+
 after that client request a `TGS`  and server reply  with one but what interesting is that it's encrypted with server account hash
 ### tools
 GetUserSPNs.py -request -dc-ip 192.168.1.100 domain/user 'user we have his creds'
@@ -218,6 +221,7 @@ hashcat -m 13100 hash_file /usr/share/wordlists/rockypu.txt
 ### reproduce
 [logo]: img/tgs.png
 ![alt text](img/tgs.png "token")
+
 once we get the hash we move on cracking it with hashcat
 ### metigation
 use strong passwords
