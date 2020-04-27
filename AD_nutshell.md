@@ -17,12 +17,17 @@ tshoot.com            TSHOOT
 
 ```
 * important files
-```
+```console
 C:\windows\NTDS    → users and groups database 
                    → ntds.dit is the file contains users and groups
 C:\windows\NTDS    → logs
 C:\windows\SYSVOL  → groups policy
 ```
+اللي يقدر يطلع الجهاز من الدومين او يكريت يوزرز لوكال ي اللوكال ادمن ي الدومين ادمن
+الباسوورد مينفعش تتغير بعد مرور 24 ساعة من تغيرها و اكبر مدة اليوزر يستخدم فيها نفس الباس 42 يوم
+اليوزر مينفعش يحط نفس الباس غير بعد 24 باس مختلف
+بيسيبو الباسورد ف الدسكربشن
+
 ## smbrelay attack
 ### idea
 ### tools
