@@ -6,7 +6,7 @@
 [logo]: img/active.png
 ![alt text](img/active.png "active direcorty")
 
-* ayad.tshoot.com called FQDN fully qualified domain name
+* ayad.tshoot.com called `FQDN` fully qualified domain name
 
 ```console
 
