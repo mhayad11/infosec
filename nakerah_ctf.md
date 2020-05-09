@@ -132,5 +132,13 @@ to get things more easy let's check ASLR in the vectim machine
 and happy news that will make our life easier so hence we will work in our target machine to get some address
 17
 we got addresses of system and exit now we need address of /bin/sh
+18
+to get the exact address of /bin/sh in the run time we add its address to starting of libc address
+19
+not our exploit is complete lets have a lock at it
+20
+now let's give it a try
+21
 
+and finally i want to say to Nakerah team “You're the best.”
  
