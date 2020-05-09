@@ -9,15 +9,15 @@ so with all that being said; let's right jump in !!
 
 # First mission
 
-#### first we have that static page 
+first we have that static page 
 [logo]: img/1.png
 ![alt text](img/1.png "static page")
 
-#### looking around source code nothing interested there 
+looking around source code nothing interested there 
 [logo]: img/2.png
 ![alt text](img/2.png "source code")
 
-#### so let's nmap it
+so let's nmap it
 [logo]: img/3.png
 ![alt text](img/3.png "nmap result")
 
@@ -25,19 +25,20 @@ as we see we have some other ports
 * 22 ssh we dont have any creds and it seems to be updated
 * 25 smtp is filtered so we maybe come back to it later
 * 80 http we already checked it
-#### so lets visit port 8080 and see what behind the scene
+
+so lets visit port 8080 and see what behind the scene
 [logo]: img/4.png
 ![alt text](img/4.png "port 8080")
 
-#### just another blank page (: i get bored so let's gobuster it :XD
+just another blank page (: i get bored so let's gobuster it :XD
  [logo]: img/5.png
 ![alt text](img/5.png "gobuster")
 
- ####  we have /backup file seems to be interesting let's dump it
+ we have /backup file seems to be interesting let's dump it
  [logo]: img/6.png
 ![alt text](img/6.png "source code")
 
- #### after downloading the file it's php code 
+ after downloading the file it's php code 
  [logo]: img/7.png
 ![alt text](img/7.png "backup file")
 
@@ -96,7 +97,7 @@ second problem  we have to bypass that cookie checks so let's write our exploit 
 the trick here is if we bypass check function it will just print some staff and if we try to target our exCommand class it will fail with check function so ...
 ```
 
-#### so we will create `exCommand object`, identify command property with a value (our command) put it inside  `Hello calss` and selialize all that staff together
+so we will create `exCommand object`, identify command property with a value (our command) put it inside  `Hello calss` and selialize all that staff together
 
 [logo]: img/ex.png
 ![alt text](img/ex.png "exploit code")
@@ -111,7 +112,7 @@ class exCommand{
    }
  ```
  
-*here we just create the same exCommand class,
+* here we just create the same exCommand class,
 
 ```php
 $x = new exCommand;
@@ -135,26 +136,34 @@ $y->dummy = $x;
 print serialize($y);
 ```
 
-* creating an oject of Hello class assing some values to properties and what interesting here it that dummy propety we gave it a value of #### our exCommand object and finally serialize all that staff and here is our final serialized data
+* creating an oject of Hello class assining some values to properties and what interesting here it that `dummy propety` we gave it a value of  our `exCommand object` and finally serialize all that staff and here is our final serialized data
 
 [logo]: img/8.png
 ![alt text](img/8.png "serialized data")
 
-#### and let's try connect
+and let's try connect
 [logo]: img/9.png
-![alt text](img/9.png "spawingin a shell")
+![alt text](img/9.png "sending payload")
 
-* and voila we get our shell fisrt missin completed successfully
+* and voila we get our shell 
+[logo]: img/sh.png
+![alt text](img/sh.png "spawingin a shell")
+
+<div allign="center"> <h2>fisrt missin completed successfully</h2> </div>
+
 ---
+---
+
 # Second mission
 
-#### in the root dir we got file 
+in the root dir we got README file
+
 [logo]: img/11.png
 ![alt text](img/11.png "static page")
 
 >NX which stand for non-executable so here we know it's BOF expolit with ret2libc
 
-#### after some enum we got that interesting suid file
+after some enum we got that interesting suid file
 
 [logo]: img/12.png
 ![alt text](img/12.png "static page")
@@ -164,42 +173,42 @@ so after getting it in our local machine to understand it better
 [logo]: img/13.png
 ![alt text](img/13.png "static page")
 
-#### we can identify that NX is enables trying to run it gives seg fault after trying passing some args it just exit
+we can identify that NX is enables trying to run it gives seg fault after trying passing some args it just exit
 
 [logo]: img/14.png
 ![alt text](img/14.png "static page")
 
-#### so let's create our buffer with msf-patter-create and fire up gdb to get the exact offset
+so let's create our buffer with msf-patter-create and fire up gdb to get the exact offset
 
 [logo]: img/15.png
 ![alt text](img/15.png "static page")
 
-#### to get things more easily let's check ASLR in the vectim machine
+to get things more easily let's check ASLR in the vectim machine
 
 [logo]: img/16.png
 ![alt text](img/16.png "static page")
 
-#### and happy news  will make our life easier so hence we will work in our target machine to get some address
+and happy news  will make our life easier so hence we will work in our target machine to get some address
 
 [logo]: img/17.png
 ![alt text](img/17.png "static page")
 
-#### we got addresses of system and exit now we need address of /bin/sh
+we got addresses of system and exit now we need address of /bin/sh
 
 [logo]: img/18.png
 ![alt text](img/18.png "static page")
 
-#### to get the exact address of /bin/sh in the run time we add its address to the starting of libc address
+to get the exact address of /bin/sh in the run time we add its address to the starting of libc address
 
 [logo]: img/19.png
 ![alt text](img/19.png "static page")
 
-#### now our exploit is complete lets have a lock at it
+now our exploit is complete lets have a lock at it
 
 [logo]: img/20.png
 ![alt text](img/20.png "static page")
 
-#### now let's give it a try
+now let's give it a try
 
 [logo]: img/21.png
 ![alt text](img/21.png "static page")
