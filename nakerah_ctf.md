@@ -135,30 +135,37 @@ we can identify that NX is enables trying to run it gives seg fault after trying
 ![alt text](img/14.png "static page")
 
 so let's create our buffer with msf-patter-create and fire up gdb to get the exact offset
+
 [logo]: img/15.png
 ![alt text](img/15.png "static page")
 
 to get things more easy let's check ASLR in the vectim machine
+
 [logo]: img/16.png
 ![alt text](img/16.png "static page")
 
 and happy news that will make our life easier so hence we will work in our target machine to get some address
+
 [logo]: img/17.png
 ![alt text](img/17.png "static page")
 
 we got addresses of system and exit now we need address of /bin/sh
+
 [logo]: img/18.png
 ![alt text](img/18.png "static page")
 
 to get the exact address of /bin/sh in the run time we add its address to starting of libc address
+
 [logo]: img/19.png
 ![alt text](img/19.png "static page")
 
 not our exploit is complete lets have a lock at it
+
 [logo]: img/20.png
 ![alt text](img/20.png "static page")
 
 now let's give it a try
+
 [logo]: img/21.png
 ![alt text](img/21.png "static page")
 
