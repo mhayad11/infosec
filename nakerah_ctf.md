@@ -116,6 +116,21 @@ and let's try connect
 ![alt text](img/9.png "spawingin a shell")
 
 and voila we get our shell fisrt missin completed successfully
-
+in the root dir we got file 
+11
+NX which stand for non-executable so here we know it's BOF expolit with ret2libc
+after some enum we got that interesting suid file
+12
+so after getting it in our local machine to understand it better 
+13
+we can identify that NX is enables trying to run it gives seg fault after trying passing some args it just exit
+14
+so let's create our buffer with msf-patter-create and fire up gdb to get the exact offset
+15
+to get things more easy let's check ASLR in the vectim machine
+16
+and happy news that will make our life easier so hence we will work in our target machine to get some address
+17
+we got addresses of system and exit now we need address of /bin/sh
 
  
