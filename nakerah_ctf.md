@@ -10,6 +10,7 @@ so with all that being said; let's right jump in !!
 # First mission
 
 first we have that static page 
+
 [logo]: img/1.png
 ![alt text](img/1.png "static page")
 
@@ -91,10 +92,14 @@ $obj->printHello();
 * at last here it create an var, assign it's value to our deserialized cookie passing it to check and `printHello` functions
 
 ```console 
-so to stay focus here it's `deserilization attack` and we need to pass our command to exCommand function which has that magic method
-we have two problems first with exCommand class we used a property command without identifying it so in our exploit we will have to pass it to an object and  give it a vlaue
+so  stay focus here 
+it's `deserilization attack` and we need to pass our command to exCommand function which has that magic method
+we have two problems 
+first with exCommand class we used a property command without identifying it so in our exploit 
+we will have to pass it to an object and  give it a vlaue
 second problem  we have to bypass that cookie checks so let's write our exploit code
-the trick here is if we bypass check function it will just print some staff and if we try to target our exCommand class it will fail with check function so ...
+the trick here is if we bypass check function it will just print some staff 
+if we try to target our exCommand class it will fail with check function so ...
 ```
 
 so we will create `exCommand object`, identify command property with a value (our command) put it inside  `Hello calss` and selialize all that staff together
@@ -136,7 +141,9 @@ $y->dummy = $x;
 print serialize($y);
 ```
 
-* creating an oject of Hello class assining some values to properties and what interesting here it that `dummy propety` we gave it a value of  our `exCommand object` and finally serialize all that staff and here is our final serialized data
+* creating an oject of Hello class assining some values to properties and what interesting here it that `dummy propety` we gave it a value of  our `exCommand object` and finally serialize all that staff 
+
+here is our final serialized data
 
 [logo]: img/8.png
 ![alt text](img/8.png "serialized data")
@@ -149,7 +156,7 @@ and let's try connect
 [logo]: img/sh.png
 ![alt text](img/sh.png "spawingin a shell")
 
-<div allign="center"> <h2>fisrt missin completed successfully</h2> </div>
+<div align="center"><h1>fisrt mission completed successfully</h1></div
 
 ---
 ---
@@ -213,5 +220,10 @@ now let's give it a try
 [logo]: img/21.png
 ![alt text](img/21.png "static page")
 
-and finally i want to say to Nakerah team “You're the best.”
+```console
+and finally i want to say to Nakerah team “You're the best.” 
+
+and oxf1f1 “You knocked me off my feet!”
+```
+
  
