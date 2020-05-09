@@ -9,12 +9,15 @@ so with all that being said; let's right jump in !!
 first we have that static page 
 [logo]: img/1.png
 ![alt text](img/1.png "static page")
+
 looking around source code nothing interested there 
 [logo]: img/2.png
 ![alt text](img/2.png "source code")
+
 so let's nmap it
 [logo]: img/3.png
 ![alt text](img/3.png "nmap result")
+
 as we see we have some other ports 
 22 ssh we dont have any creds and it seems to be updated
 25 smtp is filtered so we maybe come back to it later
@@ -22,15 +25,19 @@ as we see we have some other ports
 so lets visit port 8080 and see what behind the scene
 [logo]: img/4.png
 ![alt text](img/4.png "port 8080")
+
 just another blank page (: i got bored so let's gobuster it :XD
  [logo]: img/5.png
 ![alt text](img/5.png "gobuster")
+
  so we have /backup file seems to be interesting let's dump it
  [logo]: img/6.png
 ![alt text](img/6.png "source code")
+
  after downloading the file it's php code 
  [logo]: img/7.png
 ![alt text](img/7.png "backup file")
+
  so let's analyze it
  
  class exCommand{
@@ -74,6 +81,7 @@ the trick here is if we bypass check function it will just print some staff and 
 so we will create exCommand object identify command property with a value (our command) put it inside  Hello calss and selialize all that staff together
 [logo]: img/ex.png
 ![alt text](img/ex.png "exploit code")
+
 code analysis:
 
 class exCommand{
@@ -102,9 +110,11 @@ print serialize($y);
 creating an oject of Hello class assing some values to properties and what interesting here it that dummy propety we gave it a value of our exCommand object and finally serialize all that staff and here is our final serialized data
 [logo]: img/8.png
 ![alt text](img/8.png "serialized data")
+
 and let's try connect
 [logo]: img/9.png
 ![alt text](img/9.png "spawingin a shell")
+
 and voila we get our shell fisrt missin completed successfully
 
 
