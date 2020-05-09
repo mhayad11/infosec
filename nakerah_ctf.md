@@ -15,10 +15,12 @@ first we have that static page
 ![alt text](img/1.png "static page")
 
 looking around source code nothing interested there 
+
 [logo]: img/2.png
 ![alt text](img/2.png "source code")
 
 so let's nmap it
+
 [logo]: img/3.png
 ![alt text](img/3.png "nmap result")
 
@@ -28,14 +30,17 @@ as we see we have some other ports
 * 80 http we already checked it
 
 so lets visit port 8080 and see what behind the scene
+
 [logo]: img/4.png
 ![alt text](img/4.png "port 8080")
 
 just another blank page (: i get bored so let's gobuster it :XD
+
  [logo]: img/5.png
 ![alt text](img/5.png "gobuster")
 
  we have /backup file seems to be interesting let's dump it
+ 
  [logo]: img/6.png
 ![alt text](img/6.png "source code")
 
@@ -149,10 +154,12 @@ here is our final serialized data
 ![alt text](img/8.png "serialized data")
 
 and let's try connect
+
 [logo]: img/9.png
 ![alt text](img/9.png "sending payload")
 
 * and voila we get our shell 
+
 [logo]: img/sh.png
 ![alt text](img/sh.png "spawingin a shell")
 
