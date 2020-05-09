@@ -117,28 +117,50 @@ and let's try connect
 
 and voila we get our shell fisrt missin completed successfully
 in the root dir we got file 
-11
+[logo]: img/11.png
+![alt text](img/11.png "static page")
+
 NX which stand for non-executable so here we know it's BOF expolit with ret2libc
 after some enum we got that interesting suid file
-12
+
+[logo]: img/12.png
+![alt text](img/12.png "static page")
 so after getting it in our local machine to understand it better 
-13
+
+[logo]: img/13.png
+![alt text](img/13.png "static page")
+
 we can identify that NX is enables trying to run it gives seg fault after trying passing some args it just exit
-14
+[logo]: img/14.png
+![alt text](img/14.png "static page")
+
 so let's create our buffer with msf-patter-create and fire up gdb to get the exact offset
-15
+[logo]: img/15.png
+![alt text](img/15.png "static page")
+
 to get things more easy let's check ASLR in the vectim machine
-16
+[logo]: img/16.png
+![alt text](img/16.png "static page")
+
 and happy news that will make our life easier so hence we will work in our target machine to get some address
-17
+[logo]: img/17.png
+![alt text](img/17.png "static page")
+
 we got addresses of system and exit now we need address of /bin/sh
-18
+[logo]: img/18.png
+![alt text](img/18.png "static page")
+
 to get the exact address of /bin/sh in the run time we add its address to starting of libc address
-19
+[logo]: img/19.png
+![alt text](img/19.png "static page")
+
 not our exploit is complete lets have a lock at it
-20
+[logo]: img/20.png
+![alt text](img/20.png "static page")
+
 now let's give it a try
-21
+[logo]: img/21.png
+![alt text](img/21.png "static page")
 
 and finally i want to say to Nakerah team “You're the best.”
  
