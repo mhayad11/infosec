@@ -163,7 +163,7 @@ and let's try connect
 [logo]: img/sh.png
 ![alt text](img/sh.png "spawingin a shell")
 
-<div align="center"><h1>fisrt mission completed successfully</h1></div
+<div align="center"><h1>fisrt mission completed successfully</h1></div>
 
 ---
 ---
