@@ -1,7 +1,7 @@
 <div align="center"><h1>Nakerah CTF </h1></div>
 Peace, mercy and blessings of God 
 
-today we are going to solve an interesting CTF from  [Nakerah!](www.nakerah.net)
+today we are going to solve an interesting CTF from  [Nakerah!](https://www.nakerah.net)
 >our goal is to read root's flag  
 expolit will be devided into two missions first deserilization attack then ret2libc
 
