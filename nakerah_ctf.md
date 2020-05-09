@@ -187,7 +187,7 @@ so after getting it in our local machine to understand it better
 [logo]: img/13.png
 ![alt text](img/13.png "static page")
 
-we can identify that NX is enables trying to run it gives seg fault after trying passing some args it just exit
+we can identify that NX is enabled trying to run it gives seg fault after trying passing some args it just exit
 
 [logo]: img/14.png
 ![alt text](img/14.png "static page")
