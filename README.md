@@ -4,13 +4,13 @@
 
 [Nakerah Ctf](https://mhayad236.github.io/mh3yad/nakerah_ctf) `dark mode`
 
-
+---
 
 [Active_Directory_Attacks](https://github.com/mhayad236/mh3yad/blob/master/AD_nutshell.md)
 
 [Active_Directory_Attacks](https://mhayad236.github.io/mh3yad/AD_nutshell)  `dark mode`
 
-
+---
 
 [Web Hackers Handbook chapter 1](https://docs.google.com/document/d/1JeA2fgE7LJAvEN6yD-j2N_nwhYkos6iCrvcOKVJwjUc/edit)
 
@@ -25,6 +25,11 @@
 [Web Hackers Handbook chapter 6](https://docs.google.com/document/d/1e9pt3upxEsi0KABhZYyrygIYxZpy2a2mvMl71W0Pkv8/edit)
 
 [Sans 401 firewall](https://docs.google.com/document/d/1LiEa4k5IUtN1Llc7dxpcofc9mlWmoLbGLupOckuPOcQ/edit)
+
+[Sans 401 IDS](https://docs.google.com/document/d/1nyNGZNQEm3OsnqEtZcEwGeetmwoiOyHuN9Jf3Z8tYDg/edit)
+
+[Sans 401 Hony Pot](https://docs.google.com/document/d/1cM9WGjvy0HcgTUrSWgqh3Cihw5qOuZ72Fu9_F_eX5iU/edit)
+
 <div align="center">
 <a href="https://www.hackthebox.eu/home/users/profile/188571" title="mh3ayad"><img src="https://www.hackthebox.eu/badge/image/188571" alt="alt text" /></a></div>
 ---
