@@ -12,16 +12,19 @@
 
 
 
-[Visitaa google!](www.google.com)
+[Web Hackers Handbook chapter 1](https://docs.google.com/document/d/1JeA2fgE7LJAvEN6yD-j2N_nwhYkos6iCrvcOKVJwjUc/edit)
 
-[Visiasdt google!](www.google.com)
+[Web Hackers Handbook chapter 2](https://docs.google.com/document/d/1xxZ8ke5cIySzfc3ZwDm4bsF9SLBtCcotj6sBisIJfGE/edit)
 
-[Visiasdat google!](www.google.com)
+[Web Hackers Handbook chapter 3](https://docs.google.com/document/d/1TjB7S-teuw4P6VmdcL4chiO_Rn9I8JxydnNK3ivfEgo/edit)
 
-[Visitsada google!](www.google.com)
+[Web Hackers Handbook chapter 4](https://docs.google.com/document/d/1fTWUaaTMAgOzQKwloVF_G6cLlR09Ae4QrEhX0R0P6is/edit)
 
-[Visitsd google!](www.google.com)
+[Web Hackers Handbook chapter 5](https://docs.google.com/document/d/13oR2-MmS4zmtJDAf8JlpeWdg85-aPCsjC2IT9q9_Opg/edit)
 
+[Web Hackers Handbook chapter 6](https://docs.google.com/document/d/1e9pt3upxEsi0KABhZYyrygIYxZpy2a2mvMl71W0Pkv8/edit)
+
+[Sans 401 firewall](https://docs.google.com/document/d/1LiEa4k5IUtN1Llc7dxpcofc9mlWmoLbGLupOckuPOcQ/edit)
 <div align="center">
 <a href="https://www.hackthebox.eu/home/users/profile/188571" title="mh3ayad"><img src="https://www.hackthebox.eu/badge/image/188571" alt="alt text" /></a></div>
 ---
