@@ -1,6 +1,6 @@
 <h1><center>My Posts, Write-ups , Atricles </center> </h1>
 
-<h3><center>Write-ups</center> </h1>
+<h3><center>Write-ups</center> </h3>
 
 [DOS over wep application](https://medium.com/@mohamedayad_72488/dos-over-wep-application-c5176dc29035)
 
@@ -9,7 +9,7 @@
 [Block vectim from resetting his password](https://medium.com/@mohamedayad_72488/block-vectim-from-resetting-his-password-406c4237a3d9)
 
 ---
-<h3><center>CTF</center> </h1>
+<h3><center>CTF</center> </h3>
 
 [Nakerah Ctf](https://github.com/mh3yad/infosec/blob/master/nakerah_ctf.md)
 
@@ -40,13 +40,13 @@
 
 ---
 
-<h3><center>Binary_Exploitation</center> </h1>
+<h3><center>Binary_Exploitation</center> </h3>
 
 [protostar final 0](https://mh3yad.github.io/write-ups)
 
 ---
 
-<h3><center>Articles</center> </h1>
+<h3><center>Articles</center> </h3>
 
 #Active Directory Attacks
 
